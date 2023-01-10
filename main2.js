@@ -15,6 +15,9 @@ for(let i = 0; i < filesname.length; i++){
     let fotosx = foto.replace(/\.[^/.]+$/, "")
 
     //rename, renomeia a foto, conforme o indice dela, e a transforma em outra string conforme passado no ''
+    
+    //CRIAR PASTA OUTPUT PARA SAIDA DAS FOTOS
+    
     fs.rename('input/' + foto, 'output/' + fotosx + '.png', function(erro){
         //se aparentar um erro, ira aparecer na tela uma mensagem de erro.
         if(erro) throw erro;{
